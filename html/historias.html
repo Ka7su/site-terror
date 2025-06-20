@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórias - Casa do Terror</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        html, body {
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        body {
+            color: #d3d3d3;
+            font-family: 'Courier New', monospace;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            background-color: #000000;
+            padding: 30px 20px;
+            flex: 1;
+        }
+        .conteudo-centralizado {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color: #0d0d0d; border-bottom: 3px solid #8b0000; text-align: center; padding: 20px 0;">
+        <h1 style="color: #8b0000; margin: 0;">Casa do Terror</h1>
+        <p style="margin: 10px 0 0;">O seu portal para o desconhecido</p>
+    </header>
+
+    <nav style="background-color: #1a1a1a; display: flex; justify-content: center; padding: 15px 0;">
+        <div style="display: flex; gap: 30px;">
+            <a href="index.html" style="color: #d3d3d3; text-decoration: none; padding: 8px 15px; border-radius: 4px;">Home</a>
+            <a href="sobre.html" style="color: #d3d3d3; text-decoration: none; padding: 8px 15px; border-radius: 4px;">Sobre</a>
+            <a href="historias.html" class="ativo" style="color: white; text-decoration: none; padding: 8px 15px; border-radius: 4px; background-color: #8b0000;">Histórias</a>
+            <a href="contato.html" style="color: #d3d3d3; text-decoration: none; padding: 8px 15px; border-radius: 4px;">Contato</a>
+        </div>
+    </nav>
+
+    <main style="background-color: #000000;">
+        <div class="conteudo-centralizado">
+            <h2 style="text-align: center; margin-bottom: 30px; color: #8b0000;">Histórias Assustadoras</h2>
+            
+            <div class="historias" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 30px;">
+                <article class="carta-historia" style="background-color: #1a1a1a; border-radius: 5px; overflow: hidden; transition: transform 0.3s;">
+                    <img src="/img/casa-assombrada.jpg" alt="Casa abandonada" style="width: 100%; height: 250px; object-fit: cover; border-bottom: 2px solid #8b0000;">
+                    <div style="padding: 20px;">
+                        <h3 style="color: #8b0000; margin-top: 0;">A Casa da Colina</h3>
+                        <p>Uma casa onde os moradores desapareciam misteriosamente...</p>
+                        <button class="ler-mais" style="background-color: #8b0000; color: white; border: none; padding: 12px; width: 100%; margin-top: 15px; border-radius: 4px; cursor: pointer; transition: background-color 0.3s;">
+                            Ler Mais
+                        </button>
+                    </div>
+                </article>
+
+                <article class="carta-historia" style="background-color: #1a1a1a; border-radius: 5px; overflow: hidden; transition: transform 0.3s;">
+                    <img src="/img/livro-maldito.webp" alt="Livro antigo" style="width: 100%; height: 250px; object-fit: cover; border-bottom: 2px solid #8b0000;">
+                    <div style="padding: 20px;">
+                        <h3 style="color: #8b0000; margin-top: 0;">O Livro Maldito</h3>
+                        <p>Um livro que causa pesadelos em quem o lê...</p>
+                        <button class="ler-mais" style="background-color: #8b0000; color: white; border: none; padding: 12px; width: 100%; margin-top: 15px; border-radius: 4px; cursor: pointer; transition: background-color 0.3s;">
+                            Ler Mais
+                        </button>
+                    </div>
+                </article>
+
+                <article class="carta-historia" style="background-color: #1a1a1a; border-radius: 5px; overflow: hidden; transition: transform 0.3s;">
+                    <img src="/img/mascara-terror.jpeg" alt="Livro antigo" style="width: 100%; height: 250px; object-fit: cover; border-bottom: 2px solid #8b0000;">
+                    <div style="padding: 20px;">
+                        <h3 style="color: #8b0000; margin-top: 0;">A Máscara</h3>
+                        <p>Talvez seja melhor nem querer ver por debaixo dela.</p>
+                        <button class="ler-mais" style="background-color: #8b0000; color: white; border: none; padding: 12px; width: 100%; margin-top: 15px; border-radius: 4px; cursor: pointer; transition: background-color 0.3s;">
+                            Ler Mais
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer style="background-color: #0d0d0d; border-top: 1px solid #1a1a1a; padding: 20px; text-align: center; margin-top: auto;">
+        <p style="margin: 0;">&copy; 2025 Casa do Terror - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

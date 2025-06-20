@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Casa do Terror</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        html, body {
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        body {
+            color: #d3d3d3;
+            font-family: 'Courier New', monospace;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            background-color: #000000;
+            padding: 30px 20px;
+            flex: 1;
+        }
+        .conteudo-centralizado {
+            max-width: 1000px;
+            width: 100%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color: #0d0d0d; border-bottom: 3px solid #8b0000; text-align: center; padding: 20px 0;">
+        <h1 style="color: #8b0000; margin: 0;">Casa do Terror</h1>
+        <p style="margin: 10px 0 0;">O seu portal para o desconhecido</p>
+    </header>
+
+    <nav style="background-color: #1a1a1a; display: flex; justify-content: center; padding: 15px 0;">
+        <div style="display: flex; gap: 30px;">
+            <a href="index.html" style="color: #d3d3d3; text-decoration: none; padding: 8px 15px; border-radius: 4px;">Home</a>
+            <a href="sobre.html" class="ativo" style="color: white; text-decoration: none; padding: 8px 15px; border-radius: 4px; background-color: #8b0000;">Sobre</a>
+            <a href="historias.html" style="color: #d3d3d3; text-decoration: none; padding: 8px 15px; border-radius: 4px;">Histórias</a>
+            <a href="contato.html" style="color: #d3d3d3; text-decoration: none; padding: 8px 15px; border-radius: 4px;">Contato</a>
+        </div>
+    </nav>
+
+    <main style="background-color: #000000;">
+        <div class="conteudo-centralizado">
+            <section>
+                <h2 style="text-align: center; color: #8b0000; margin-bottom: 25px;">Sobre Nós</h2>
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 25px;">
+                    <img src="/img/fantasma.jpg" alt="Figura fantasmagórica" style="max-width: 100%; border: 2px solid #8b0000; border-radius: 5px;">
+                    <p style="text-align: center; max-width: 800px; line-height: 1.6;">Somos um grupo de pesquisadores do paranormal dedicados a investigar casos inexplicáveis que desafiam a lógica e a ciência convencional.</p>
+                    
+                    <div style="background-color: #1a1a1a; padding: 25px; border-radius: 5px; border: 1px solid #8b0000; width: 100%; max-width: 800px;">
+                        <h3 style="color: #8b0000; margin-top: 0; text-align: center;">Nossa Equipe</h3>
+                        <ul style="list-style-type: none; padding: 0; display: grid; gap: 15px;">
+                            <li style="padding: 12px; background-color: #0d0d0d; border-radius: 4px; border-left: 3px solid #8b0000;">
+                                <strong>Dr. Alan Wake</strong> - Investigador Chefe com 20 anos de experiência
+                            </li>
+                            <li style="padding: 12px; background-color: #0d0d0d; border-radius: 4px; border-left: 3px solid #8b0000;">
+                                <strong>Sarah Connor</strong> - Especialista em Fenômenos Paranormais
+                            </li>
+                            <li style="padding: 12px; background-color: #0d0d0d; border-radius: 4px; border-left: 3px solid #8b0000;">
+                                <strong>Mike Flanagan</strong> - Documentarista e Cineasta
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer style="background-color: #0d0d0d; border-top: 1px solid #1a1a1a; padding: 20px; text-align: center; margin-top: auto;">
+        <p style="margin: 0;">&copy; 2025 Casa do Terror - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

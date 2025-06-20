@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Casa do Terror</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        html, body {
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        body {
+            color: #d3d3d3;
+            font-family: 'Courier New', monospace;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            background-color: #000000;
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .conteudo-centralizado {
+            max-width: 800px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color: #0d0d0d; border-bottom: 3px solid #8b0000; text-align: center; padding: 20px 0;">
+        <h1 style="color: #8b0000; margin: 0;">Casa do Terror</h1>
+        <p style="margin: 10px 0 0;">O seu portal para o desconhecido</p>
+    </header>
+
+    <nav style="background-color: #1a1a1a; display: flex; justify-content: center; padding: 15px 0;">
+        <div style="display: flex; gap: 30px;">
+            <a href="index.html" style="color: #d3d3d3; text-decoration: none; padding: 8px 15px; border-radius: 4px;">Home</a>
+            <a href="sobre.html" style="color: #d3d3d3; text-decoration: none; padding: 8px 15px; border-radius: 4px;">Sobre</a>
+            <a href="historias.html" style="color: #d3d3d3; text-decoration: none; padding: 8px 15px; border-radius: 4px;">Histórias</a>
+            <a href="contato.html" class="ativo" style="color: white; text-decoration: none; padding: 8px 15px; border-radius: 4px; background-color: #8b0000;">Contato</a>
+        </div>
+    </nav>
+
+    <main style="background-color: #000000; padding: 30px 20px;">
+        <div class="conteudo-centralizado">
+            <h2 style="text-align: center; margin-bottom: 25px; color: #8b0000;">Entre em Contato</h2>
+            
+            <form id="formContato" style="background-color: #1a1a1a; padding: 30px; border: 1px solid #8b0000; border-radius: 5px; margin: 0 auto;">
+                <div class="grupo-form" style="margin-bottom: 20px;">
+                    <label for="nome" style="color: #8b0000; display: block; margin-bottom: 8px; font-weight: bold;">Nome:</label>
+                    <input type="text" id="nome" required style="background-color: #0d0d0d; color: #d3d3d3; border: 1px solid #333; padding: 12px; width: 100%; border-radius: 4px;">
+                    <span class="erro" id="erroNome" style="color: #ff4444; font-size: 0.9em; display: none;"></span>
+                </div>
+
+                <div class="grupo-form" style="margin-bottom: 20px;">
+                    <label for="email" style="color: #8b0000; display: block; margin-bottom: 8px; font-weight: bold;">E-mail:</label>
+                    <input type="email" id="email" required style="background-color: #0d0d0d; color: #d3d3d3; border: 1px solid #333; padding: 12px; width: 100%; border-radius: 4px;">
+                    <span class="erro" id="erroEmail" style="color: #ff4444; font-size: 0.9em; display: none;"></span>
+                </div>
+
+                <div class="grupo-form" style="margin-bottom: 20px;">
+                    <label for="assunto" style="color: #8b0000; display: block; margin-bottom: 8px; font-weight: bold;">Assunto:</label>
+                    <select id="assunto" required style="background-color: #0d0d0d; color: #d3d3d3; border: 1px solid #333; padding: 12px; width: 100%; border-radius: 4px;">
+                        <option value="">Selecione...</option>
+                        <option value="relato">Relato Paranormal</option>
+                        <option value="duvida">Dúvida</option>
+                        <option value="sugestao">Sugestão</option>
+                    </select>
+                    <span class="erro" id="erroAssunto" style="color: #ff4444; font-size: 0.9em; display: none;"></span>
+                </div>
+
+                <div class="grupo-form" style="margin-bottom: 25px;">
+                    <label for="mensagem" style="color: #8b0000; display: block; margin-bottom: 8px; font-weight: bold;">Mensagem (mín. 20 caracteres):</label>
+                    <textarea id="mensagem" required minlength="20" style="background-color: #0d0d0d; color: #d3d3d3; border: 1px solid #333; padding: 12px; width: 100%; min-height: 150px; border-radius: 4px;"></textarea>
+                    <span class="erro" id="erroMensagem" style="color: #ff4444; font-size: 0.9em; display: none;"></span>
+                </div>
+
+                <button type="submit" style="background-color: #8b0000; color: white; border: none; padding: 14px; width: 100%; font-size: 1.1em; border-radius: 4px; cursor: pointer; transition: background-color 0.3s;">
+                    Enviar Mensagem
+                </button>
+            </form>
+
+            <div id="mensagemSucesso" class="sucesso" style="text-align: center; margin-top: 20px; padding: 15px; background-color: #228822; display: none;"></div>
+        </div>
+    </main>
+
+    <footer style="background-color: #0d0d0d; border-top: 1px solid #1a1a1a; padding: 20px; text-align: center; margin-top: auto;">
+        <p style="margin: 0;">&copy; 2025 Casa do Terror - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
